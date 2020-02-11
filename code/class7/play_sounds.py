@@ -18,6 +18,8 @@ textSurfaceObj = fontObj.render('BEEP!', True, GREEN, BLUE)
 textRectObj = textSurfaceObj.get_rect()
 textRectObj.center = (200, 150)
 
+pygame.mixer.init()
+
 soundObj = pygame.mixer.Sound('beep.wav')
 soundObj.play()
 

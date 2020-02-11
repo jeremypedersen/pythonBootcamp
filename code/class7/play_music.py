@@ -18,6 +18,8 @@ textSurfaceObj = fontObj.render('MUSIC PARTY!', True, GREEN, BLUE)
 textRectObj = textSurfaceObj.get_rect()
 textRectObj.center = (200, 150)
 
+pygame.mixer.init()
+
 pygame.mixer.music.load('funky_space_music.mp3')
 pygame.mixer.music.play(-1, 0.0)
 
